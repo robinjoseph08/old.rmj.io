@@ -16,15 +16,17 @@
       padding: 10px 20px;
     }
 
-    & > .input {
-      padding: 10px 20px 0 20px;
-    }
+    form {
+      & > .input {
+        padding: 10px 20px 0 20px;
+      }
 
-    & > .help {
-      text-align: center;
-      font-size: 14px;
-      font-family: 'AmbleLightItalic';
-      padding: 5px 20px 10px 20px;
+      & > .help {
+        text-align: center;
+        font-size: 14px;
+        font-family: 'AmbleLightItalic';
+        padding: 5px 20px 10px 20px;
+      }
     }
   }
 
@@ -44,11 +46,6 @@
         margin-right: 0;
       }
     }
-
-    .level,
-    .score {
-      margin-left: 3px;
-    }
   }
 
   .words {
@@ -63,23 +60,23 @@
       padding: 5px 30px;
 
       li {
-        color: #111;
+        color: $font-color;
 
         i {
           margin-right: 5px;
 
           &.fa-check {
-            color: #2ECC71;
+            color: $green;
           }
 
           &.fa-times {
-            color: #E74C3C;
+            color: $red;
           }
         }
 
         span {
           &.match {
-            color: #2ECC71;
+            color: $green;
           }
         }
       }
@@ -92,6 +89,7 @@
 
   .submit {
     text-align: center;
+    padding: 20px;
 
     button {
       display: inline-block;
@@ -112,5 +110,11 @@
         box-shadow: none;
       }
     }
+  }
+
+  .finish {
+    color: $regex-color;
+    text-align: center;
+    padding: 20px;
   }
 }
