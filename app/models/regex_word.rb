@@ -2,11 +2,11 @@ class RegexWord < ActiveRecord::Base
 
   belongs_to :regex_level
 
-  def left
+  def self.left
     where :side => 'left'
   end
 
-  def right
+  def self.right
     where :side => 'right'
   end
 
