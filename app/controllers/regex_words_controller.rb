@@ -8,4 +8,8 @@ class RegexWordsController < ApplicationController
     end
   end
 
+  def show
+    render :json => RegexWord.find(params[:id])
+  end
+
 end
