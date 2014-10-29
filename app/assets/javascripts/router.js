@@ -18,5 +18,6 @@ Ember.Route.reopen({
 });
 
 RMJ.Router.map(function () {
-  // this.resource('posts');
+  this.resource('regex');
+  this.resource('about');
 });

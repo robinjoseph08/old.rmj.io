@@ -59,34 +59,24 @@
           button {
             margin: 0;
 
-            &.purple {
-              background: #9B59B6;
-              box-shadow: 0 2px 0 #70318B;
+            &.regex {
+              background: $regex-color;
+              box-shadow: 0 2px 0 darken($regex-color, $border-percentage);
             }
 
-            &.blue {
-              background: #3498DB;
-              box-shadow: 0 2px 0 #2980B9;
+            &.github {
+              background: $github-color;
+              box-shadow: 0 2px 0 darken($github-color, $border-percentage);
             }
 
-            &.green {
-              background: #2ECC71;
-              box-shadow: 0 2px 0 #27AE60;
+            &.twitter {
+              background: $twitter-color;
+              box-shadow: 0 2px 0 darken($twitter-color, $border-percentage);
             }
 
-            &.yellow {
-              background: #F1C40F;
-              box-shadow: 0 2px 0 #F39C12;
-            }
-
-            &.orange {
-              background: #E67E22;
-              box-shadow: 0 2px 0 #D35400;
-            }
-
-            &.red {
-              background: #E74C3C;
-              box-shadow: 0 2px 0 #C0392B;
+            &.about {
+              background: $about-color;
+              box-shadow: 0 2px 0 darken($about-color, $border-percentage);
             }
           }
         }
