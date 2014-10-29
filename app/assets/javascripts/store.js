@@ -1,5 +1,4 @@
-RMJ.Store = DS.Store.extend({
-
+RMJ.ApplicationStore = DS.Store.extend({
 });
 
 // Override the default adapter with the `DS.ActiveModelAdapter` which

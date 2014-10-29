@@ -6,7 +6,7 @@ Ember.Route.reopen({
   activate: function (router) {
     this._super(router);
 
-    var text = "Fortheon";
+    var text = "Robin Joseph";
     var title = this.get('title');
 
     if(title) {

@@ -9,31 +9,90 @@
   bottom: 0;
   right: 0;
   padding: 20px;
-}
 
-.splash::before {
-  content: '';
-  display: inline-block;
-  height: 100%;
-  vertical-align: middle;
-}
+  &::before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+  }
 
-.splash .inner {
-  text-align: center;
-  padding: 20px;
-  display: inline-block;
-  vertical-align: middle;
-  outline: 0;
-  border: 1px #aaa solid;
-  border-radius: 4px;
-  background: #fff;
-  box-shadow: 0 2px 0 #aaa;
-  overflow: hidden;
-  -webkit-animation: fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
-  -moz-animation:    fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
-  -ms-animation:     fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
-  -o-animation:      fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
-  animation:         fade-in 300ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
+  .inner {
+    text-align: center;
+    padding: 20px;
+    display: inline-block;
+    vertical-align: middle;
+    outline: 0;
+    border: 1px #aaa solid;
+    border-radius: 4px;
+    background: #fff;
+    box-shadow: 0 2px 0 #aaa;
+    overflow: hidden;
+    -webkit-animation: fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
+    -moz-animation:    fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
+    -ms-animation:     fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
+    -o-animation:      fade-in 500ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
+    animation:         fade-in 300ms forwards cubic-bezier(0.8,0.02,0.45,0.91);
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 5px 10px;
+
+        a {
+          position: relative;
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          -ms-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+
+          button {
+            margin: 0;
+
+            &.purple {
+              background: #9B59B6;
+              box-shadow: 0 2px 0 #70318B;
+            }
+
+            &.blue {
+              background: #3498DB;
+              box-shadow: 0 2px 0 #2980B9;
+            }
+
+            &.green {
+              background: #2ECC71;
+              box-shadow: 0 2px 0 #27AE60;
+            }
+
+            &.yellow {
+              background: #F1C40F;
+              box-shadow: 0 2px 0 #F39C12;
+            }
+
+            &.orange {
+              background: #E67E22;
+              box-shadow: 0 2px 0 #D35400;
+            }
+
+            &.red {
+              background: #E74C3C;
+              box-shadow: 0 2px 0 #C0392B;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 @-webkit-keyframes fade-in {
@@ -182,63 +241,4 @@
     -o-transform:      scale(1) rotateX(0) translate(0, 0px);
     transform:         scale(1) rotateX(0) translate(0, 0px);
   }
-}
-
-.splash h1 {
-  margin-bottom: 10px;
-}
-
-.splash ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.splash ul a {
-  position: relative;
-  -webkit-transition: all 0.5s ease-in-out;
-  -moz-transition: all 0.5s ease-in-out;
-  -o-transition: all 0.5s ease-in-out;
-  -ms-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.splash ul li {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 5px 10px;
-}
-
-.splash ul li button {
-  margin: 0;
-}
-
-.splash ul li button.purple {
-  background: #9B59B6;
-  box-shadow: 0 2px 0 #70318B;
-}
-
-.splash ul li button.blue {
-  background: #3498DB;
-  box-shadow: 0 2px 0 #2980B9;
-}
-
-.splash ul li button.green {
-  background: #2ECC71;
-  box-shadow: 0 2px 0 #27AE60;
-}
-
-.splash ul li button.yellow {
-  background: #F1C40F;
-  box-shadow: 0 2px 0 #F39C12;
-}
-
-.splash ul li button.orange {
-  background: #E67E22;
-  box-shadow: 0 2px 0 #D35400;
-}
-
-.splash ul li button.red {
-  background: #E74C3C;
-  box-shadow: 0 2px 0 #C0392B;
 }

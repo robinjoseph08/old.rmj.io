@@ -1,9 +1,27 @@
 @import 'variables';
 
-.about p {
-  margin: 20px 0;
-}
+.about {
+  h1 {
+    color: $about-color;
+  }
 
-.about a {
-  text-decoration: underline;
+  button,
+  input[type="submit"] {
+    background: $about-color;
+    box-shadow: 0 2px 0 darken($about-color, $border-percentage);
+
+    &:active,
+    &.active {
+      background: darken($about-color, $border-percentage);
+      box-shadow: none;
+    }
+  }
+
+  p {
+    margin: 20px 0;
+  }
+
+  a {
+    text-decoration: underline;
+  }
 }

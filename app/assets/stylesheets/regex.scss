@@ -1,100 +1,116 @@
 @import 'variables';
 
-.regex .main-container > div {
-  padding: 10px 20px;
-}
+.regex {
+  h1 {
+    color: $regex-color;
+  }
 
-.regex .status {
-  text-align: center;
-}
+  button,
+  input[type="submit"] {
+    background: $regex-color;
+    box-shadow: 0 2px 0 darken($regex-color, $border-percentage);
+  }
 
-.regex .status > div {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 5px;
-}
+  .main-container {
+    & > div {
+      padding: 10px 20px;
+    }
 
-.regex .status > div:first-child {
-  margin-left: 0;
-}
+    & > .input {
+      padding: 10px 20px 0 20px;
+    }
 
-.regex .status > div:last-child {
-  margin-right: 0;
-}
+    & > .help {
+      text-align: center;
+      font-size: 14px;
+      font-family: 'AmbleLightItalic';
+      padding: 5px 20px 10px 20px;
+    }
+  }
 
-.regex .status .level,
-.regex .status .score {
-  margin-left: 3px;
-}
+  .status {
+    text-align: center;
 
-.regex .words {
-  text-align: center;
-}
+    & > div {
+      display: inline-block;
+      vertical-align: middle;
+      margin: 0 5px;
 
-.regex .words ul {
-  text-align: left;
-  margin: 0;
-  list-style: none;
-  display: inline-block;
-  vertical-align: top;
-  padding: 5px 30px;
-}
+      &:first-child {
+        margin-left: 0;
+      }
 
-.regex .words li {
-  color: #111;
-}
+      &:last-child {
+        margin-right: 0;
+      }
+    }
 
-.regex .words li i {
-  margin-right: 5px;
-}
+    .level,
+    .score {
+      margin-left: 3px;
+    }
+  }
 
-.regex .words li i.fa-check {
-  color: #2ECC71;
-}
+  .words {
+    text-align: center;
 
-.regex .words li i.fa-times {
-  color: #E74C3C;
-}
+    ul {
+      text-align: left;
+      margin: 0;
+      list-style: none;
+      display: inline-block;
+      vertical-align: top;
+      padding: 5px 30px;
 
-.regex .words li span.match {
-  color: #2ECC71;
-}
+      li {
+        color: #111;
 
-.regex .main-container > .input {
-  padding: 10px 20px 0 20px;
-}
+        i {
+          margin-right: 5px;
 
-.regex input {
-  font-family: 'DejaVuSansMonoBook';
-}
+          &.fa-check {
+            color: #2ECC71;
+          }
 
-.regex .main-container > .help {
-  text-align: center;
-  font-size: 14px;
-  font-family: 'AmbleLightItalic';
-  padding: 5px 20px 10px 20px;
-}
+          &.fa-times {
+            color: #E74C3C;
+          }
+        }
 
-.regex .submit {
-  text-align: center;
-}
+        span {
+          &.match {
+            color: #2ECC71;
+          }
+        }
+      }
+    }
+  }
 
-.regex .submit button {
-  display: inline-block;
-  vertical-align: middle;
-  padding: 5px 10px;
-  margin: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  position: relative;
-  -webkit-appearance: none;
-  border: none;
-  font-size: 14px;
-  color: #fff;
-  cursor: pointer;
-}
+  input {
+    font-family: 'DejaVuSansMonoBook';
+  }
 
-.regex .submit button:active {
-  top: 2px;
-  box-shadow: none;
+  .submit {
+    text-align: center;
+
+    button {
+      display: inline-block;
+      vertical-align: middle;
+      padding: 5px 10px;
+      margin: 5px 10px;
+      border-radius: 4px;
+      cursor: pointer;
+      position: relative;
+      -webkit-appearance: none;
+      border: none;
+      font-size: 14px;
+      color: #fff;
+      cursor: pointer;
+
+      &:active {
+        top: 2px;
+        box-shadow: none;
+      }
+    }
+  }
 }
