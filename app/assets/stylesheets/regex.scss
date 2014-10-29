@@ -1,0 +1,100 @@
+@import 'variables';
+
+.regex .main-container > div {
+  padding: 10px 20px;
+}
+
+.regex .status {
+  text-align: center;
+}
+
+.regex .status > div {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 5px;
+}
+
+.regex .status > div:first-child {
+  margin-left: 0;
+}
+
+.regex .status > div:last-child {
+  margin-right: 0;
+}
+
+.regex .status .level,
+.regex .status .score {
+  margin-left: 3px;
+}
+
+.regex .words {
+  text-align: center;
+}
+
+.regex .words ul {
+  text-align: left;
+  margin: 0;
+  list-style: none;
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 30px;
+}
+
+.regex .words li {
+  color: #111;
+}
+
+.regex .words li i {
+  margin-right: 5px;
+}
+
+.regex .words li i.fa-check {
+  color: #2ECC71;
+}
+
+.regex .words li i.fa-times {
+  color: #E74C3C;
+}
+
+.regex .words li span.match {
+  color: #2ECC71;
+}
+
+.regex .main-container > .input {
+  padding: 10px 20px 0 20px;
+}
+
+.regex input {
+  font-family: 'DejaVuSansMonoBook';
+}
+
+.regex .main-container > .help {
+  text-align: center;
+  font-size: 14px;
+  font-family: 'AmbleLightItalic';
+  padding: 5px 20px 10px 20px;
+}
+
+.regex .submit {
+  text-align: center;
+}
+
+.regex .submit button {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 5px 10px;
+  margin: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  position: relative;
+  -webkit-appearance: none;
+  border: none;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.regex .submit button:active {
+  top: 2px;
+  box-shadow: none;
+}

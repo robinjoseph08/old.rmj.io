@@ -1,0 +1,182 @@
+@import 'variables';
+
+.blog.new .drafts {
+  padding: 20px;
+}
+
+.blog.new .drafts h1 {
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.blog.new .drafts ol {
+  margin: 0;
+}
+
+.blog.new .drafts ol a {
+  text-decoration: underline;
+}
+
+.blog.new .drafts ol .slug,
+.blog.new .drafts ol .date,
+.blog.new .drafts ol .body {
+  display: none;
+}
+
+.blog.new input[type="text"],
+.blog.new input[type="password"] {
+  margin-bottom: 10px;
+}
+
+.blog.new textarea {
+  font-family: 'DejaVuSansMonoBook';
+  height: 300px;
+  font-size: 13px;
+}
+
+.blog.new .draft {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.blog.new .draft i {
+  position: relative;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  border: 1px #aaa solid;
+  font-size: 14px;
+  background: #fff;
+  cursor: pointer;
+  box-shadow: 0 2px 0 #aaa;
+  margin-right: 5px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.blog.new .draft label {
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.blog.new .buttons {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.blog.new .buttons button,
+.blog.new .buttons input {
+  color: #fff;
+  margin: 5px 10px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.pagination {
+  padding: 0 20px;
+  list-style: none;
+  text-align: center;
+}
+
+.pagination li {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.post-container .title {
+  margin: 0;
+}
+
+.container.purple .post-container .title {
+  color: #9B59B6;
+}
+
+.container.blue .post-container .title {
+  color: #3498DB;
+}
+
+.container.green .post-container .title {
+  color: #2ECC71;
+}
+
+.container.yellow .post-container .title {
+  color: #F1C40F;
+}
+
+.container.orange .post-container .title {
+  color: #E67E22;
+}
+
+.container.red .post-container .title {
+  color: #E74C3C;
+}
+
+.post-container .date {
+  font-family: 'AmbleLightItalic';
+}
+
+.blog.post h1,
+.blog.post h2,
+.blog.post h3,
+.blog.post h4,
+.blog.post h5,
+.blog.post h6,
+.blog.post p {
+  margin: 20px 0;
+}
+
+.blog.post a {
+  text-decoration: underline;
+}
+
+.blog.post pre {
+  background-color: #f8f8f8;
+  border: 1px solid #aaa;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+.blog.post code {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  border: 1px solid #aaa;
+  background-color: #f8f8f8;
+  border-radius: 3px;
+}
+
+.blog.post pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+.share button {
+  width: 40px;
+}
+
+.share.twitter button {
+  border: 1px #1C8FE4 solid;
+  background: #59ADEB;
+  box-shadow: 0 2px 0 #1C8FE4;
+}
+
+.share.hn button {
+  border: 1px #D64503 solid;
+  background: #FC6621;
+  box-shadow: 0 2px 0 #D64503;
+}
+
+.share.reddit button {
+  border: 1px #95C1ED solid;
+  background: #CFE3F7;
+  box-shadow: 0 2px 0 #95C1ED;
+}
