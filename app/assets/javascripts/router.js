@@ -6,11 +6,11 @@ Ember.Route.reopen({
   activate: function (router) {
     this._super(router);
 
-    var text = "Robin Joseph";
+    var text = "rmj";
     var title = this.get('title');
 
     if(title) {
-      text += " | " + title;
+      text = title;
     }
 
     $(document).find('title').text(text);
