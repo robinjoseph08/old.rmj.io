@@ -59,6 +59,11 @@
           button {
             margin: 0;
 
+            &.fortheon {
+              background: $fortheon-color;
+              box-shadow: 0 2px 0 darken($fortheon-color, $border-percentage);
+            }
+
             &.regex {
               background: $regex-color;
               box-shadow: 0 2px 0 darken($regex-color, $border-percentage);
