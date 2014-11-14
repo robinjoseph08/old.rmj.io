@@ -1,16 +1,6 @@
 @import 'variables';
 
 .regex {
-  h1 {
-    color: $regex-color;
-  }
-
-  button,
-  input[type="submit"] {
-    background: $regex-color;
-    box-shadow: 0 2px 0 darken($regex-color, $border-percentage);
-  }
-
   .main-container {
     & > div {
       padding: 10px 20px;
@@ -113,7 +103,7 @@
   }
 
   .finish {
-    color: $regex-color;
+    color: $primary-color;
     text-align: center;
     padding: 20px;
   }

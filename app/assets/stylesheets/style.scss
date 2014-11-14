@@ -147,22 +147,11 @@ noscript {
     font-size: 26px;
     margin: 0;
     padding: 0;
+    color: $primary-color;
 
     i {
       display: block;
       padding: 5px;
-    }
-  }
-
-  &.regex-home {
-    button {
-      color: $regex-color;
-    }
-  }
-
-  &.about-home {
-    button {
-      color: $about-color;
     }
   }
 }
@@ -181,6 +170,22 @@ noscript {
     border-radius: 4px;
     background: #FFFFFF;
     box-shadow: 0 2px 0 darken(#FFFFFF, $border-percentage);
+
+    h1 {
+      color: $primary-color;
+    }
+
+    button,
+    input[type="submit"] {
+      background: $primary-color;
+      box-shadow: 0 2px 0 darken($primary-color, $border-percentage);
+
+      &:active,
+      &.active {
+        background: darken($primary-color, $border-percentage);
+        box-shadow: none;
+      }
+    }
   }
 }
 

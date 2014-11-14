@@ -58,31 +58,8 @@
 
           button {
             margin: 0;
-
-            &.fortheon {
-              background: $fortheon-color;
-              box-shadow: 0 2px 0 darken($fortheon-color, $border-percentage);
-            }
-
-            &.regex {
-              background: $regex-color;
-              box-shadow: 0 2px 0 darken($regex-color, $border-percentage);
-            }
-
-            &.github {
-              background: $github-color;
-              box-shadow: 0 2px 0 darken($github-color, $border-percentage);
-            }
-
-            &.twitter {
-              background: $twitter-color;
-              box-shadow: 0 2px 0 darken($twitter-color, $border-percentage);
-            }
-
-            &.about {
-              background: $about-color;
-              box-shadow: 0 2px 0 darken($about-color, $border-percentage);
-            }
+            background: $primary-color;
+            box-shadow: 0 2px 0 darken($primary-color, $border-percentage);
           }
         }
       }
