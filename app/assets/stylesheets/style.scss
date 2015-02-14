@@ -9,7 +9,8 @@ body {
   margin: 0;
   background: $background-color;
   color: $font-color;
-  font-family: $primary-font;
+  font-family: $primary-font-family;
+  font-weight: $normal-font-weight;
 }
 
 h1,
@@ -18,8 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $bold-font;
-  font-weight: normal;
+  font-weight: $bold-font-weight;
   margin: 0;
   color: inherit;
 }
@@ -34,6 +34,11 @@ a {
   color: inherit;
 }
 
+em {
+  font-style: italic;
+  font-weight: $italic-font-weight;
+}
+
 hr {
   border: none;
   background: darken(#FFFFFF, $border-percentage);
@@ -43,7 +48,7 @@ hr {
 }
 
 pre {
-  font-family: 'DejaVuSansMonoBook';
+  font-family: $monospace-font-family;
   background-color: #f8f8f8;
   border: 1px solid darken(#FFFFFF, $border-percentage);
   font-size: 13px;
@@ -63,7 +68,7 @@ pre {
 }
 
 code {
-  font-family: 'DejaVuSansMonoBook';
+  font-family: $monospace-font-family;
   margin: 0 2px;
   padding: 0 5px;
   white-space: nowrap;
@@ -74,17 +79,20 @@ code {
 
 input,
 textarea {
-  font-family: 'Amble';
+  font-family: $primary-font-family;
   border-radius: 4px;
   background: #fff;
   -webkit-appearance: none;
   border: none;
-  font-size: 14px;
+  font-size: 16px;
   @include border-box;
   box-shadow: 0 2px 0 darken(#FFFFFF, $border-percentage);
   padding: 5px 10px;
   resize: none;
-  font-family: 'Amble';
+
+  &.code {
+    font-family: $monospace-font-family;
+  }
 }
 
 input:focus,
@@ -114,7 +122,7 @@ input[type='submit'] {
   font-size: 14px;
   color: #FFFFFF;
   cursor: pointer;
-  font-family: 'Amble';
+  font-family: $primary-font-family;
 
   &:active,
   &.active {
@@ -136,7 +144,6 @@ input[type='submit'] {
 
 noscript {
   color: $red;
-  font-family: $light-italic-font;
 }
 
 .home-button {
@@ -174,8 +181,18 @@ noscript {
     background: #FFFFFF;
     box-shadow: 0 2px 0 darken(#FFFFFF, $border-percentage);
 
-    h1 {
-      color: $primary-color;
+    .header {
+      padding: 20px;
+      text-align: center;
+
+      h1 {
+        color: $primary-color;
+        margin-bottom: 5px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
     }
 
     button,
@@ -196,16 +213,6 @@ noscript {
   }
 }
 
-.header {
-  padding: 20px;
-  text-align: center;
-
-  h2 {
-    font-size: 16px;
-    font-family: $light-italic-font;
-  }
-}
-
 .content {
   padding: 20px;
 
@@ -213,6 +220,7 @@ noscript {
     &:first-child {
       margin-top: 0;
     }
+
     &:last-child {
       margin-bottom: 0;
     }

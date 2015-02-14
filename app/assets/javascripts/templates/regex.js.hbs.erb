@@ -3,9 +3,9 @@
   <div class="inner">
     <div class="header">
       <h1>regex</h1>
-      <h2>Try to match the first six words completely while not matching any of the last six words at all. When they all have checkmarks, you've gotten it. The shorter the regex, the lower the score, the better you are. Currently, there are only {{model.length}} levels, and the lowest score I ever got was {{lowestScore}}.</h2>
+      <h2><em>Try to match the first six words completely while not matching any of the last six words at all. When they all have checkmarks, you've gotten it. The shorter the regex, the lower the score, the better you are. Currently, there are only {{model.length}} levels, and the lowest score I ever got was {{lowestScore}}.</em></h2>
       <noscript>
-        <p>You need JavaScript for this site to work properly.</p>
+        <p><em>You need JavaScript for this site to work properly.</em></p>
       </noscript>
     </div>
     <hr>
@@ -29,10 +29,10 @@
         </div>
         <form {{action 'nextLevel' on="submit"}}>
           <div class="input">
-            {{input type="text" autocomplete='off' autocapitalize='none' placeholder='Enter regex' value=currentLevel.regex}}
+            {{input type="text" autocomplete='off' autocapitalize='none' placeholder='Enter regex' value=currentLevel.regex class="code"}}
           </div>
           <div class="help">
-            <p>You should omit any surrounding '/'s and any modifiers.</p>
+            <p><em>You should omit any surrounding '/'s and any modifiers.</em></p>
           </div>
           <div class="submit">
             <button {{bind-attr disabled="currentLevel.unfinished"}}>next</button>
