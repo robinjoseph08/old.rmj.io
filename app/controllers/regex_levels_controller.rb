@@ -8,4 +8,8 @@ class RegexLevelsController < ApplicationController
     end
   end
 
+  def show
+    render :json => RegexLevel.find(params[:id])
+  end
+
 end

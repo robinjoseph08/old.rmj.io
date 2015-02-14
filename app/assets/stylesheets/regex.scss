@@ -80,26 +80,6 @@
   .submit {
     text-align: center;
     padding: 20px;
-
-    button {
-      display: inline-block;
-      vertical-align: middle;
-      padding: 5px 10px;
-      margin: 5px 10px;
-      border-radius: 4px;
-      cursor: pointer;
-      position: relative;
-      -webkit-appearance: none;
-      border: none;
-      font-size: 14px;
-      color: #fff;
-      cursor: pointer;
-
-      &:active {
-        top: 2px;
-        box-shadow: none;
-      }
-    }
   }
 
   .finish {

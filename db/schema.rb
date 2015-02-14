@@ -11,20 +11,34 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2) do
+ActiveRecord::Schema.define(version: 4) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "regex_levels", force: true do |t|
+  create_table "regex_levels", force: :cascade do |t|
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "regex_words", force: true do |t|
+  create_table "regex_words", force: :cascade do |t|
     t.string   "value"
     t.string   "side"
     t.integer  "regex_level_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "takuzu_boards", force: :cascade do |t|
+    t.integer  "size"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "takuzu_boxes", force: :cascade do |t|
+    t.integer  "value"
+    t.integer  "correct_value"
+    t.integer  "takuzu_board_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
