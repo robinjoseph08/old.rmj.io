@@ -20,5 +20,5 @@ Ember.Route.reopen({
 RMJ.Router.map(function () {
   this.resource('regex');
   this.resource('takuzu');
-  this.resource('about');
+  this.resource('resume');
 });
