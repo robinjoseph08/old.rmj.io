@@ -185,6 +185,11 @@ noscript {
       padding: 20px;
       text-align: center;
 
+      a {
+        text-decoration: underline;
+        color: $primary-color;
+      }
+
       h1 {
         color: $primary-color;
         margin-bottom: 5px;
@@ -209,6 +214,23 @@ noscript {
 
     .centered {
       text-align: center;
+    }
+  }
+}
+
+@media print {
+  .container {
+    padding: 0;
+
+    .inner {
+      border: none;
+      box-shadow: none;
+
+      a,
+      hr {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
     }
   }
 }
