@@ -17,6 +17,7 @@
 //= require ember
 //= require ember-data
 //= require_self
+//= require ./mixpanel
 //= require ./rmj
 
 // for more details see: http://emberjs.com/guides/application/

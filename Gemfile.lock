@@ -80,6 +80,7 @@ GEM
     mime-types (2.4.3)
     mini_portile (0.6.2)
     minitest (5.5.1)
+    mixpanel-ruby (1.7.0)
     multi_json (1.10.1)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
@@ -154,6 +155,7 @@ DEPENDENCIES
   ember-rails
   ember-source (~> 1.10.0)
   jquery-rails
+  mixpanel-ruby
   pg
   rails (= 4.2)
   rails_12factor

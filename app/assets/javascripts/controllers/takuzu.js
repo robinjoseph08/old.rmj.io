@@ -27,9 +27,17 @@ RMJ.TakuzuController = Ember.ArrayController.extend({
     },
 
     nextLevel: function () {
-      if (this.get('level') < this.get('model.length') - 1) {
+      var l = this.get('level');
+      if (l < this.get('model.length') - 1) {
+        mixpanel.track("Pass takuzu level", {
+          level: l
+        });
         this.incrementProperty('level');
       } else if (!this.get('finished')) {
+        mixpanel.track("Pass takuzu level", {
+          level: l
+        });
+        mixpanel.track("Finish takuzu");
         this.toggleProperty('finished');
       }
     }

@@ -9,6 +9,7 @@ gem 'sass-rails', '~> 4.0.3'
 gem 'uglifier', '>= 1.3.0'
 gem 'jquery-rails'
 gem 'rails_12factor', group: :production
+gem 'mixpanel-ruby'
 
 gem 'thin'
 gem 'ember-rails'
