@@ -6,13 +6,14 @@ Repo for my personal site
 
 * [index](http://rmj.io)
 * [regex](http://rmj.io/regex)
-* [about](http://rmj.io/about)
+* [takuzu](http://rmj.io/takuzu)
+* [resume](http://rmj.io/resume)
 
 ## Dependencies
 
-* Rails `v4.1.5`
+* Rails `v4.2.0`
 * PostgreSQL `v9.3`
-* Ember `v1.8.0`
-* Ember Data `v1.0.0-beta.11`
-* Handlebars `v1.3.0`
-* jQuery `v1.11.1`
+* Ember `v1.10.0`
+* Ember Data `v1.0.0.beta.14.1`
+* Handlebars `v2.0.0`
+* jQuery `v1.11.2`
