@@ -25,7 +25,7 @@ RMJ.RegexController = Ember.ArrayController.extend({
         var s = c.get('regex').length;
         mixpanel.track("Pass regex level", {
           level: l,
-          regex: this.get('regex')
+          regex: c.get('regex')
         });
         this.incrementProperty('score', s);
         this.incrementProperty('level');
