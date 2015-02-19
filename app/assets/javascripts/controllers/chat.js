@@ -17,8 +17,12 @@ RMJ.ChatController = Ember.ArrayController.extend({
     this.set('name', 'anon-' + ret);
   },
 
-  success: function () {
+  success: function (resp) {
     this.set('body', "");
+    mixpanel.track('Posted on chat', {
+      name: resp.get('name'),
+      body: resp.get('body')
+    });
   },
 
   failure: function () {
