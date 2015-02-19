@@ -9,7 +9,7 @@ Ember.Route.reopen({
     var text = "rmj";
     var title = this.get('title');
 
-    if(title) {
+    if (title) {
       text = title;
     }
 
@@ -20,5 +20,6 @@ Ember.Route.reopen({
 RMJ.Router.map(function () {
   this.resource('regex');
   this.resource('takuzu');
+  this.resource('chat');
   this.resource('resume');
 });

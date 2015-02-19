@@ -1,0 +1,55 @@
+@import 'variables';
+@import 'mixins';
+
+.chat {
+  .messages {
+    border-radius: 4px;
+    border: 1px darken(#FFFFFF, $border-percentage) solid;
+    box-shadow: 0 2px 0 darken(#FFFFFF, $border-percentage);
+    width: 80%;
+    margin: 0 auto;
+    display: block;
+    height: 400px;
+    overflow-y: scroll;
+
+    tr.message {
+      &:last-child {
+        td {
+          padding-bottom: 5px;
+        }
+      }
+
+      td {
+        padding: 5px 5px 0 5px;
+
+        &.message-content {
+          width: 100%;
+
+          .name {
+            color: darken(#FFFFFF, ($border-percentage + 10));
+            font-size: 0.8em;
+            margin-bottom: 3px;
+          }
+        }
+
+        &.datetime {
+          color: darken(#FFFFFF, ($border-percentage + 10));
+          font-size: 0.7em;
+          text-align: center;
+
+          .date {
+            margin-bottom: 1px;
+          }
+        }
+      }
+    }
+  }
+
+  .new-message {
+    text-align: center;
+
+    input {
+      margin-bottom: 5px;
+    }
+  }
+}
