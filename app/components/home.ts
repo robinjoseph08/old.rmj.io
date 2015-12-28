@@ -1,7 +1,8 @@
-import {Component} from 'angular2/core';
-import {ROUTER_DIRECTIVES} from 'angular2/router';
+import { Component } from 'angular2/core';
+import { ROUTER_DIRECTIVES } from 'angular2/router';
 
 @Component({
+  directives: [ROUTER_DIRECTIVES],
   template: `
     <div class="splash">
       <div class="inner">
@@ -45,7 +46,6 @@ import {ROUTER_DIRECTIVES} from 'angular2/router';
         </ul>
       </div>
     </div>
-  `,
-  directives: [ROUTER_DIRECTIVES]
+  `
 })
 export class HomeComponent {}
