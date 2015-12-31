@@ -1,7 +1,10 @@
 import 'reflect-metadata';
-import { bootstrap } from 'angular2/platform/browser';
-import { AppComponent } from './components/app.ts';
+import 'rxjs';
+
+import { bootstrap }        from 'angular2/platform/browser';
 import { ROUTER_PROVIDERS } from 'angular2/router';
+
+import { AppComponent } from './components/app';
 
 bootstrap(AppComponent, [
   ROUTER_PROVIDERS

@@ -1,8 +1,8 @@
-import { Component } from 'angular2/core';
-import { ROUTER_DIRECTIVES } from 'angular2/router';
+import { Component }  from 'angular2/core';
+import { RouterLink } from 'angular2/router';
 
 @Component({
-  directives: [ROUTER_DIRECTIVES],
+  directives: [RouterLink],
   template: `
     <div class="splash">
       <div class="inner">
@@ -19,12 +19,12 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
             </a>
           </li>
           <li>
-            <a [routerLink]="['Takuzu']">
+            <a>
               <button class="takuzu">takuzu</button>
             </a>
           </li>
           <li>
-            <a [routerLink]="['Chat']">
+            <a>
               <button class="chat">chat</button>
             </a>
           </li>
@@ -39,7 +39,7 @@ import { ROUTER_DIRECTIVES } from 'angular2/router';
             </a>
           </li>
           <li>
-            <a [routerLink]="['Resume']">
+            <a>
               <button class="resume">résumé</button>
             </a>
           </li>
