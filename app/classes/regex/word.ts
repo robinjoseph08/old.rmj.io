@@ -21,13 +21,13 @@ export class RegexWord {
   public get matched (): boolean {
     let matches = this.matches;
 
-    return this.value !== '' && matches && matches[0] !== '';
+    return this.value !== '' && Boolean(matches) && matches[0] !== '';
   }
 
   public get fullyMatched (): boolean {
     let matches = this.matches;
 
-    return this.value !== '' && matches && matches[0] === this.value;
+    return this.value !== '' && Boolean(matches) && matches[0] === this.value;
   }
 
   public get passed (): boolean {

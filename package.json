@@ -19,7 +19,8 @@
     "scss:watch": "npm run scss:build && node-sass -w app/styles -o public/build app/styles/index.scss",
     "serve": "lite-server",
     "prestart": "npm run clean",
-    "start": "concurrent 'npm run js:watch' 'npm run scss:watch' 'npm run serve'"
+    "start": "concurrent 'npm run js:watch' 'npm run scss:watch' 'npm run serve'",
+    "test": "karma start"
   },
   "repository": {
     "type": "git",
@@ -41,11 +42,20 @@
   },
   "devDependencies": {
     "browserify": "^12.0.1",
+    "browserify-istanbul": "^0.2.1",
     "concurrently": "^1.0.0",
     "eslint": "^1.10.3",
     "eslint-config-lob": "^1.0.1",
     "generate-changelog": "^1.0.0",
     "html2js-browserify": "^1.1.0",
+    "jasmine-core": "^2.4.1",
+    "karma": "^0.13.16",
+    "karma-browserify": "^4.4.2",
+    "karma-chrome-launcher": "^0.2.2",
+    "karma-coverage": "^0.5.3",
+    "karma-firefox-launcher": "^0.1.7",
+    "karma-jasmine": "^0.3.6",
+    "karma-spec-reporter": "0.0.23",
     "lite-server": "^1.3.1",
     "node-sass": "^3.4.2",
     "tsify": "^0.13.1",
