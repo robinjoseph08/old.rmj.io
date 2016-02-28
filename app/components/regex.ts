@@ -1,4 +1,5 @@
 import { Component, OnInit } from 'angular2/core';
+import { Title }             from 'angular2/platform/browser';
 
 import { RegexLevel }          from '../classes/regex/level';
 import { RegexService }        from '../services/regex';
@@ -8,7 +9,7 @@ const HTML = require('../views/regex.html');
 
 @Component({
   directives: [HomeButtonComponent],
-  providers: [RegexService],
+  providers: [RegexService, Title],
   template: HTML
 })
 export class RegexComponent implements OnInit {
@@ -24,8 +25,9 @@ export class RegexComponent implements OnInit {
     return this.levels[this.level];
   }
 
-  constructor (_regexService: RegexService) {
+  constructor (_regexService: RegexService, _title: Title) {
     this._regexService = _regexService;
+    _title.setTitle('regex');
   }
 
   public ngOnInit () {
