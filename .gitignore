@@ -15,9 +15,11 @@ results
 dump.rdb
 npm-debug.log
 node_modules
+typings
 
 coverage
 bundle.js
+public/build/*
 
 .idea/
 .DS_Store
