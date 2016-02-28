@@ -19,7 +19,6 @@ typings
 
 coverage
 bundle.js
-public/build/*
 
 .idea/
 .DS_Store
